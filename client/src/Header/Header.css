@@ -1,0 +1,21 @@
+.Header {
+  padding: 1.5rem 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.Icon {
+  z-index: 2;
+}
+
+.location {
+  margin-left: -3rem;
+  width: 100%;
+  display: flex;
+}
+
+h1 {
+  margin: auto;
+  font-weight: 900;
+  color: #95989A;
+}
