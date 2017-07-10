@@ -1,4 +1,23 @@
-/*.contain {
+.App {
+  position: relative;
+}
+
+.container {
   padding-left: 2rem;
   padding-right: 2rem;
-}*/
+}
+
+.contained {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.rounded {
+  border-radius: 5px;
+}
+
+.shadow {
+  -webkit-box-shadow: 0px 7px 15px 3px rgba(230,230,230,0.56);
+  -moz-box-shadow: 0px 7px 15px 3px rgba(230,230,230,0.56);
+  box-shadow: 0px 7px 15px 3px rgba(230,230,230,0.56);
+}

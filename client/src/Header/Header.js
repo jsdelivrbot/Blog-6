@@ -6,11 +6,13 @@ import Icon from './Icon';
 class Header extends Component {
   render() {
     return (
-      <div className="Header contain">
+      <div className="Header">
+        <div className="headerContainer">
           <Icon className="Icon"/>
           <div className="location">
-            <h1>Home</h1>
+            <h1 className="page">Home</h1>
           </div>
+        </div>
       </div>
     );
   }

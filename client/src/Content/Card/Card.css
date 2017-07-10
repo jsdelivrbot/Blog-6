@@ -1,0 +1,28 @@
+.Card {
+  border: 1px solid rgba(230,230,230,0.8);
+  position: relative;
+  display: flex;
+  margin-bottom: 0.8rem;
+}
+
+.cardImg {
+  width: 28rem;
+  border-radius: 5px 0 0 5px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: border-box;
+  background-position: 50% 50%;
+}
+
+.cardTxtContainer {
+  padding: 0.7rem;
+}
+
+.cardTitle {
+  margin: auto;
+}
+
+.cardDescription {
+  font-size: 0.8rem;
+  color: rgba(0, 0, 0, 0.3);
+}
