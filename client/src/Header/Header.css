@@ -11,6 +11,10 @@
   align-items: center;
 }
 
+.nav {
+  display: none;
+}
+
 /*=========== ICON ==============*/
 
 .Icon {
@@ -34,22 +38,13 @@
   margin: auto;
 }
 
-/*=========== LOCATION ==============*/
+/*=========== BRAND ==============*/
 
-.location {
+.brand {
   width: 100%;
   text-align: center;
 }
 
-.locationTitle {
-
+.brandTitle {
   color: #95989A;
-}
-.headerContainer {
-
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-  padding: 0.6rem 1rem;
-  display: flex;
-  align-items: center;
 }

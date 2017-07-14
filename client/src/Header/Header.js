@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Header.css';
+import './Header-D.css';
 
 class Header extends Component {
   constructor(props) {
@@ -17,8 +18,17 @@ class Header extends Component {
       <div className="Header">
         <div className="contained">
           <Icon onIconClick={() => this.toggle()}/>
-          <div className="location">
-            <h1 className="locationTitle">Home</h1>
+          <a className="brand" href="/">
+            <h1 className="brandTitle">Tech Imursion</h1>
+          </a>
+          <div className="nav">
+            <div className="separator"></div>
+            <a className="navLinks" href="/">
+              <h4>About</h4>
+            </a>
+            <a className="navLinks" href="/">
+              <h4>Contact</h4>
+            </a>
           </div>
         </div>
         {this.showDropDown()}
@@ -41,9 +51,9 @@ const DropDown = () => {
   return (
     <div className="DropDown">
       <div className="contained">
-        <a href="/">Home</a>
-        <hr/>
         <a href="/">About</a>
+        <hr/>
+        <a href="/">Contact</a>
         <hr/>
       </div>
     </div>
