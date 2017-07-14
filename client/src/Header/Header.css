@@ -1,28 +1,55 @@
+/*=========== HEADER ==============*/
 .Header {
   z-index: 2;
+  background-color: rgba(255, 255, 255, 0.8);
   width: 100%;
   position: fixed;
-  background-color: rgba(255, 255, 255, 0.8);
 }
 
-.headerContainer {
-  padding: 1.5rem 2rem;
+.Header > div.contained {
   display: flex;
   align-items: center;
 }
 
+/*=========== ICON ==============*/
+
 .Icon {
-  z-index: 3;
+  display: flex;
+  position: absolute;
+  left: 50;
+  justify-content: center;
+  flex-direction: column;
+  width: 2.3rem;
+  height: 1.8rem;
 }
+
+.bar {
+  width: 100%;
+  height: 5px;
+  background-color: #95989A;
+  border-radius: 50px;
+}
+
+#middle {
+  margin: auto;
+}
+
+/*=========== LOCATION ==============*/
 
 .location {
-  margin-left: -3rem;
   width: 100%;
-  display: flex;
+  text-align: center;
 }
 
-.page {
-  margin: auto;
-  font-weight: 900;
+.locationTitle {
+
   color: #95989A;
+}
+.headerContainer {
+
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  padding: 0.6rem 1rem;
+  display: flex;
+  align-items: center;
 }
