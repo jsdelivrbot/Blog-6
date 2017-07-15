@@ -2,14 +2,27 @@
   position: relative;
 }
 
-.container {
+.container-m {
   padding-left: 2rem;
   padding-right: 2rem;
 }
 
-.contained {
+.contained-m {
   margin-left: 2rem;
   margin-right: 2rem;
+}
+
+@media only screen and (min-width : 800px) {
+
+  .container-d {
+
+  }
+
+  .contained-d {
+    margin-left: 20vw;
+    margin-right: 20vw;
+  }
+
 }
 
 .hidden {

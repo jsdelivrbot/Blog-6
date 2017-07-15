@@ -16,16 +16,17 @@ class Header extends Component {
   render() {
     return (
       <div className="Header">
-        <div className="contained">
+        <div className="contained-m contained-d">
           <Icon onIconClick={() => this.toggle()}/>
           <a className="brand" href="/">
-            <h1 className="brandTitle">Tech Imursion</h1>
+            <h1 className="brandTitle">Illustran</h1>
           </a>
           <div className="nav">
             <div className="separator"></div>
             <a className="navLinks" href="/">
               <h4>About</h4>
             </a>
+            <div className="separator"></div>
             <a className="navLinks" href="/">
               <h4>Contact</h4>
             </a>
@@ -50,7 +51,7 @@ const Icon = ({onIconClick}) => {
 const DropDown = () => {
   return (
     <div className="DropDown">
-      <div className="contained">
+      <div className="contained-m">
         <a href="/">About</a>
         <hr/>
         <a href="/">Contact</a>

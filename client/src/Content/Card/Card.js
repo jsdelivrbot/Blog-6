@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 
-import './Card.css'
+import './Card.css';
+import './Card-D.css';
 
 class Content extends Component {
   render() {
     return (
-      <div className="Card contained rounded shadow">
+      <div className="Card contained-m contained-d rounded shadow">
         <div className="cardImg"
           style={{
               backgroundImage: "url('https://static.pexels.com/photos/27403/pexels-photo-27403.jpg')"

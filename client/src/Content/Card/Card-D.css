@@ -1,0 +1,29 @@
+@media only screen and (min-width : 800px) {
+
+  .Card {
+    height: 25rem;
+  }
+
+  .cardTxtContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .cardImg {
+    min-width: 15rem;
+  }
+
+  .cardTitle {
+    font-size: 2rem;
+    margin: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .cardDescription {
+    margin: 1em;
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+}

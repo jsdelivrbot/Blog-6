@@ -1,0 +1,26 @@
+.featuredCover {
+  width: 100%;
+  height:18rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: border-box;
+  background-position: 50% 50%;
+  filter: saturate(110%);
+}
+
+.featuredTextContainer {
+  box-sizing: border-box;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.featuredTitle {
+  margin: auto;
+  color: #467C95;
+}
+
+#featuredHr {
+  background-color: rgba(0, 0, 0, 0.12);
+  height: 1px;
+  border: none;
+}
