@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './Header.css';
-import './Header-D.css';
+import './Header-M.css';
 
 class Header extends Component {
   constructor(props) {
@@ -16,7 +16,7 @@ class Header extends Component {
   render() {
     return (
       <div className="Header">
-        <div className="contained-m contained-d">
+        <div className="contained-s contained-m">
           <Icon onIconClick={() => this.toggle()}/>
           <a className="brand" href="/">
             <h1 className="brandTitle">Illustran</h1>
