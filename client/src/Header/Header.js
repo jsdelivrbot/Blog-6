@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import './Header.css';
 import './Header-M.css';
 
+import Icon from './Icon';
+import DropDown from './DropDown';
+import Nav from './Nav';
+
 class Header extends Component {
   constructor(props) {
     super(props);
@@ -15,50 +19,18 @@ class Header extends Component {
   }
   render() {
     return (
-      <div className="Header">
+      <div className="Header shadow-light">
         <div className="contained-s contained-m">
           <Icon onIconClick={() => this.toggle()}/>
-          <a className="brand" href="/">
+          <a className="brandContainer" href="/">
             <h1 className="brandTitle">Illustran</h1>
           </a>
-          <div className="nav">
-            <div className="separator"></div>
-            <a className="navLinks" href="/">
-              <h4>About</h4>
-            </a>
-            <div className="separator"></div>
-            <a className="navLinks" href="/">
-              <h4>Contact</h4>
-            </a>
-          </div>
+          <Nav />
         </div>
         {this.showDropDown()}
       </div>
     );
   }
-}
-
-const Icon = ({onIconClick}) => {
-  return (
-    <div className="Icon" onClick={onIconClick}>
-      <div id="top" className="bar"></div>
-      <div id="middle" className="bar"></div>
-      <div id="bottom" className="bar"></div>
-    </div>
-  )
-}
-
-const DropDown = () => {
-  return (
-    <div className="DropDown">
-      <div className="contained-m">
-        <a href="/">About</a>
-        <hr/>
-        <a href="/">Contact</a>
-        <hr/>
-      </div>
-    </div>
-  )
 }
 
 export default Header;

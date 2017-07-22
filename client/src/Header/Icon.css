@@ -1,0 +1,31 @@
+.Icon {
+  z-index: 3;
+  display: flex;
+  position: absolute;
+  left: 50;
+  justify-content: center;
+  flex-direction: column;
+  width: 2.3rem;
+  height: 1.8rem;
+}
+
+.bar {
+  width: 100%;
+  height: 6px;
+  background-color: rgba(157, 41, 206, 1);
+  border-radius: 50px;
+}
+
+#middle {
+  margin: auto;
+  margin-left: 0;
+  width: 70%;
+}
+
+@media only screen and (min-width : 800px) {
+
+  .Icon {
+    display: none;
+  }
+
+}

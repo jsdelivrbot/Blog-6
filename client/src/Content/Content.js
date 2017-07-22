@@ -3,12 +3,13 @@ import './Content.css';
 import Card from './Card/Card';
 import Featured from './Featured/Featured';
 import Article from './Article/Article';
+import ArticleEditor from './ArticleEditor/ArticleEditor';
 
 class Content extends Component {
   render() {
     return (
       <div className="Content">
-        <Article />
+        <ArticleEditor />
         {/* <Featured />
         <Card />
         <Card />

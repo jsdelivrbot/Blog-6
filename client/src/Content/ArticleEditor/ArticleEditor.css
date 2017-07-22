@@ -1,4 +1,4 @@
-.Article {
+.ArticleEditor {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,6 +11,25 @@
   padding-bottom: 3rem;
 }
 
+.ArticleEditor textarea {
+  font-family: 'Lato';
+  border: none;
+}
+
+.ArticleEditor textarea:focus {
+    background-color: yellow;
+}
+
+.articleTitleInput {
+  width: 100%;
+  resize: none;
+  color: teal;
+  font-size: 2em;
+  font-weight: bold;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
 .articleCover {
   background-repeat: no-repeat;
   background-size: cover;
@@ -21,6 +40,13 @@
 }
 
 .articleText {
+  font-size: 18px;
+  line-height: 28px;
+  color: rgba(69, 88, 98, 0.8);
+}
+
+.articleTextInput {
+  width: 100%;
   font-size: 18px;
   line-height: 28px;
   color: rgba(69, 88, 98, 0.8);

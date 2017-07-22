@@ -13,6 +13,11 @@
     line-height: 33px;
   }
 
+  .articleTextInput {
+    font-size: 21px;
+    line-height: 33px;
+  }
+
   .articleCover {
     min-width: 675px;
     width: 60vw;
