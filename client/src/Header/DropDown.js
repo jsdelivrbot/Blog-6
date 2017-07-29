@@ -5,9 +5,9 @@ const DropDown = () => {
   return (
     <div className="DropDown">
       <div className="contained-m">
-        <a href="/">About</a>
+        <a href="/about">About</a>
         <hr/>
-        <a href="/">Contact</a>
+        <a href="/contact">Contact</a>
         <hr/>
       </div>
     </div>
