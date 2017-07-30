@@ -4,10 +4,13 @@ import './DropDown.css';
 const DropDown = () => {
   return (
     <div className="DropDown">
-      <div className="contained-m">
-        <a href="/about">About</a>
+      <div className="linkContainer contained-s">
+        <a href="/about">
+          <h3>About</h3>
+        </a>
         <hr/>
-        <a href="/contact">Contact</a>
+        <a href="/contact">
+          <h3>Contact</h3></a>
         <hr/>
       </div>
     </div>

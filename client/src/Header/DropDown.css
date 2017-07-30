@@ -1,3 +1,15 @@
+hr {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+h3 {
+  color: #670592;
+}
+
+h3:active {
+  color: rgba(255, 255, 255, 0.7);
+}
+
 @media only screen and (min-width : 800px) {
 
   .DropDown {

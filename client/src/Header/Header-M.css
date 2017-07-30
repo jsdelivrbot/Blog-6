@@ -8,13 +8,13 @@
     width: initial;
     height: 100%;
     display: flex;
+    align-items: center;
   }
 
   .brandTitle {
     white-space: nowrap;
     margin: auto;
     padding: 0 2vw;
-    /*color: #95989A;*/
   }
 
 }

@@ -22,9 +22,11 @@ class Header extends Component {
       <div className="Header shadow-light">
         <div className="contained-s contained-m">
           <Icon onIconClick={() => this.toggle()}/>
-          <a className="brandContainer" href="/">
-            <h1 className="brandTitle">Illustran</h1>
-          </a>
+          <div className="brandContainer">
+            <a href="/">
+              <h1 className="brandTitle">Illustran</h1>
+            </a>
+          </div>
           <Nav />
         </div>
         {this.showDropDown()}
