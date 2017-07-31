@@ -1,3 +1,7 @@
+.articleBody {
+  margin-top: 1rem;
+}
+
 .articleBody * {
   outline:none !important;
   text-align: left;
@@ -8,5 +12,6 @@
 }
 
 .editParagraph {
+  margin-top: 1rem;
   font-size: 1.5em;
 }

@@ -10,18 +10,28 @@ class ArticleEditor extends Component {
     super(props);
     this.state = {
       title: 'Title',
-      p: ["bama"]
+      p: ["Your article"]
     }
   }
-  titleChange = (e) => {
-    this.setState({
-      title: e.target.value
-    });
+  handleChange = (e, type, index) => {
+    switch (type) {
+      case 'title':
+        this.setState({
+          title: e.target.value
+        });
+        break;
+      case 'paragraph':
+        this.setState({
+          p: [e.target.value]
+        });
+        break;
+      default:
+    }
   }
-  pChange = (e) => {
-    this.setState({
-      p: [...this.state.p, e.target.value]
-    });
+  handleKey = (e) => {
+    if(e.key === 'Enter') {
+      console.log("entered!!!!!")
+    }
   }
   handleFocus = () => {
 
@@ -30,6 +40,8 @@ class ArticleEditor extends Component {
 
   }
   render() {
+    console.log(this.state.p);
+    console.log(this.state.title);
     return (
       <div className="ArticleEditor">
         <div className="articleBody container-s container-m">
@@ -37,13 +49,14 @@ class ArticleEditor extends Component {
             className="editTile"
             html={this.state.title}
             disabled={false}
-            onChange={this.handleChange}
+            onChange={(e) => this.handleChange(e, 'title', null)}
           />
           <ContentEditable
             className="editParagraph"
             html={this.state.p[0]}
             disabled={false}
-            onChange={this.handleChange}
+            onChange={(e) => this.handleChange(e, 'paragraph', 0)}
+            onKeyPress={this.handleKey}
           />
         </div>
       </div>
