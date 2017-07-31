@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router'
 import './Content.css';
-import Article from './Article/Article';
+import Article from './ArticleEditor/ArticleEditor';
 import Contact from './Contact/Contact';
 import About from './About/About';
 
