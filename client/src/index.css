@@ -1,6 +1,18 @@
+html {
+  background-color: purple;
+}
+
 body {
   margin: 0;
   font-family: 'Lato', sans-serif;
+  min-height: 100vh;
+  position: relative;
+  background-color: white;
+}
+
+#root {
+  /*min-height: 100vh;*/
+  position: relative;
 }
 
 a {

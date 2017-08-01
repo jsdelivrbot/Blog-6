@@ -1,0 +1,6 @@
+.Content {
+  box-sizing: border-box;
+  padding-top: 65px;
+  position: relative;
+  /*min-height: 100vh;*/
+}

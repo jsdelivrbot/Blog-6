@@ -4,7 +4,11 @@ import './EditBar.css';
 class EditBar extends Component {
   render() {
     return (
-      <div className="EditBar">
+      <div className="EditBar container-s container-m">
+        <button>B</button>
+        <button>I</button>
+        <button>center</button>
+        <button>left-align</button>
       </div>
     )
   }

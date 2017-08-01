@@ -1,17 +1,8 @@
-.articleBody {
-  margin-top: 1rem;
+.editorClass {
+   font-size: 3rem;
+   color: blue;
 }
 
-.articleBody * {
-  outline:none !important;
-  text-align: left;
-}
-
-.editTile {
-  font-size: 3em;
-}
-
-.editParagraph {
-  margin-top: 1rem;
-  font-size: 1.5em;
+.public-DraftEditorPlaceholder-root {
+  font-size: 3rem;
 }
