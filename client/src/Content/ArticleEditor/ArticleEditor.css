@@ -1,3 +1,11 @@
+.ArticleEditor {
+  position: relative;
+}
+
+.articleBody {
+  padding-top: 40px;
+}
+
 .editorClass {
    font-size: 3rem;
    color: blue;
