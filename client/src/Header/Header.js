@@ -14,13 +14,14 @@ class Header extends Component {
   toggle() {
     this.setState({ dropDownIsVisible: !this.state.dropDownIsVisible })
   }
-  showDropDown() {
-    return this.state.dropDownIsVisible ? <DropDown /> : null;
-  }
   render() {
+    let headerClass;
+    if(this.state.dropDownIsVisible) {
+      headerClass = 'stretchHeight'
+    }
     return (
-      <div className="Header shadow-light">
-        <div className="contained-s contained-m">
+      <div className={"Header shadow-light " + headerClass}>
+        <div className="navContainer container-m">
           <Icon onIconClick={() => this.toggle()}/>
           <div className="brandContainer">
             <a href="/">
@@ -29,7 +30,7 @@ class Header extends Component {
           </div>
           <Nav />
         </div>
-        {this.showDropDown()}
+        <DropDown />
       </div>
     );
   }

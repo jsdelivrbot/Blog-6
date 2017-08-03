@@ -1,9 +1,15 @@
+.DropDown {
+  z-index: 0;
+  margin-top: 4rem;
+}
+
 hr {
   border-color: rgba(255, 255, 255, 0.2);
 }
 
 h3 {
   color: #670592;
+  margin: 3pt 1rem;
 }
 
 h3:active {

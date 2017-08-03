@@ -1,7 +1,13 @@
 @media only screen and (min-width : 800px) {
 
-  .Header > div {
-    height: 4rem;
+  .Header {
+    display: block;
+    height: 3rem;
+  }
+
+  .navContainer {
+    height: 3rem;
+    width: auto;
   }
 
   .brandContainer {
