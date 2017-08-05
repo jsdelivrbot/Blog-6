@@ -3,6 +3,7 @@ import 'draft-js/dist/Draft.css';
 import './ArticleEditor.css';
 import './ArticleEditor-M.css';
 import EditBar from './EditBar';
+import AddModule from './AddModule';
 import { Editor, EditorState, RichUtils } from 'draft-js';
 
 const styleMap = {
@@ -36,6 +37,7 @@ class ArticleEditor extends Component {
     return (
       <div className="ArticleEditor">
         <EditBar onClick={(style) => this.editBarClick(style)} />
+        <AddModule />
         <div className="articleBody container-s container-m">
           <Editor
           customStyleMap={styleMap}

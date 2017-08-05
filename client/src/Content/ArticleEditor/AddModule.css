@@ -1,0 +1,16 @@
+.AddModule {
+  display: flex;
+}
+
+.actions {
+  border: 1px solid blue;
+}
+
+.actions > ul {
+  padding: 0 ;
+}
+
+.actions > ul li{
+  display: inline-block;
+  margin: 0 1rem;
+}
