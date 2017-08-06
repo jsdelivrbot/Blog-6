@@ -4,49 +4,44 @@ import './ArticleEditor.css';
 import './ArticleEditor-M.css';
 import EditBar from './EditBar';
 import AddModule from './AddModule';
-import { Editor, EditorState, RichUtils } from 'draft-js';
-
-const styleMap = {
-  'STRIKETHROUGH': {
-    textDecoration: 'line-through',
-  },
-};
+import TextBlock from './TextBlock';
 
 class ArticleEditor extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {editorState: EditorState.createEmpty()};
-    this.onChange = (editorState) => this.setState({editorState});
-    this.handleKeyCommand = this.handleKeyCommand.bind(this);
+  state = {
+    h: 1,
+    p: 0
   }
-  handleKeyCommand(command) {
-    const newState = RichUtils.handleKeyCommand(this.state.editorState, command);
-    if (newState) {
-      this.onChange(newState);
-      return 'handled';
+  addItem = (item) => {
+    console.log('time to add a ' + item);
+    switch (item) {
+      case 'Header':
+        this.setState({h: this.state.h + 1});
+        break;
+      case 'Paragraph':
+        this.setState({p: this.state.p + 1});
+        break;
+      case 'Image':
+        alert("Sorry, can't do images yet");
+        break;
+      default:
+        console.log('Did not know what type of item to add. NOT a Header, Paragraph or Image');
     }
-    return 'not-handled';
   }
-  myBlockStyleFn(contentBlock) {
-    return 'editorClass'
-  }
-  editBarClick = (style) => {
-    this.onChange(RichUtils.toggleInlineStyle(this.state.editorState, style));
+  newTextBlock = () => {
+    const num = this.state.h + this.state.p;
+    let blocks = [];
+    for(let i = 0; i < num; i++) {
+      blocks.push(<TextBlock />);
+    }
+    return blocks;
   }
   render() {
     return (
       <div className="ArticleEditor">
         <EditBar onClick={(style) => this.editBarClick(style)} />
-        <AddModule />
         <div className="articleBody container-s container-m">
-          <Editor
-          customStyleMap={styleMap}
-          editorState={this.state.editorState}
-          handleKeyCommand={this.handleKeyCommand}
-          onChange={this.onChange}
-          placeholder="Tell a story..."
-          spellCheck={true}
-          blockStyleFn={this.myBlockStyleFn}/>
+          {this.newTextBlock()}
+          <AddModule addItem={(item) => this.addItem(item)}/>
         </div>
       </div>
     )

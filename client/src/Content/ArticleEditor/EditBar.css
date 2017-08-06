@@ -1,7 +1,7 @@
 .EditBar {
   z-index: 2;
   /*height: 35px;*/
-  width: 100%;
+  /*width: 100%;*/
   background-color: lightgray;
   display: flex;
 }

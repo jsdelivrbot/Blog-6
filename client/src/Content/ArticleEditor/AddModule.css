@@ -1,16 +1,57 @@
 .AddModule {
+  margin-top: 1rem;
   display: flex;
+  align-items: center;
+}
+
+.plus {
+  cursor: pointer;
+  color: rgba(66, 248, 155, 0.7);
+  -webkit-transition: all 0.4s; /* Safari */
+  transition: all 0.4s;
+}
+
+.plus:hover {
+  color: rgba(66, 248, 155, 1);
 }
 
 .actions {
-  border: 1px solid blue;
+  width: 0;
+  overflow: hidden;
+  -webkit-transition: width 0.4s; /* Safari */
+  transition: width 0.4s;
+}
+
+.turn {
+  -ms-transform: rotate(45deg); /* IE 9 */
+  -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+  transform: rotate(45deg);
+  color: rgba(255, 115, 79, 0.8);
+}
+
+.turn:hover {
+  color: rgba(255, 115, 79, 1);
+}
+
+.visible {
+  width: 200pt;
 }
 
 .actions > ul {
   padding: 0 ;
+  display: flex;
 }
 
 .actions > ul li{
+  cursor: pointer;
   display: inline-block;
   margin: 0 1rem;
+}
+
+.actions > ul li:hover {
+  text-decoration: underline;
+}
+
+.actions > ul li:active {
+  color: #9D29CE;
 }
