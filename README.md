@@ -1,2 +1,2 @@
-# Blog
-Blog built by react
+# SSR-Template
+Render React on the Server
